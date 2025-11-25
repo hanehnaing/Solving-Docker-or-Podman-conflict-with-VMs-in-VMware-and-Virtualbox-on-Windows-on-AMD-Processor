@@ -1,2 +1,13 @@
 # Solving-Docker-or-Podman-conflict-with-VMs-in-VMware-and-Virtualbox-on-Windows-on-AMD-Processor
 This is a short note for Docker and Podman conflict.
+### To Use Docker , run power shell as admin ###
+
+`bcdedit /set hypervisorlaunchtype auto`
+
+Then restart the device
+
+### To Use VMs(VMware and Virtualbox) , run power shell as admin ###
+
+`bcdedit /set hypervisorlaunchtype off`
+
+Then restart the device
